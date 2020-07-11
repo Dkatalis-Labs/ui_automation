@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Checkout Page" configfailurepolicy="continue" verbose="100" preserve-order="true">
+
+    <listeners>
+        <listener class-name="com.listener.Listener"/>
+    </listeners>
+
+
+    <test  name="Checkout">
+        <classes>
+            <class name="com.checkout_flow.tests.CheckoutFlowPageVerificationTests"/>
+            <class name="com.checkout_flow.tests.CheckoutFlowEndToEndTest"/>
+        </classes>
+    </test>
+
+</suite>
